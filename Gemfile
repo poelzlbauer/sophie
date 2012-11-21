@@ -5,7 +5,25 @@ gem 'rails', '3.2.8'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'sqlite3'
+  gem 'capybara'
+  gem 'factory_girl_rails'
+  gem 'guard-rspec'
+  gem 'rb-fchange', '0.0.5'
+  gem 'rb-notifu', '0.0.4'
+  gem 'win32console' 
+
+end
+
+
+group :test do
+end
+
+
 
 
 # Gems used only for assets and not required

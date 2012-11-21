@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @entry.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @entry.description %>
+</p>
+
+<p>
+  <b>Start ts:</b>
+  <%= @entry.start_ts %>
+</p>
+
+<p>
+  <b>End ts:</b>
+  <%= @entry.end_ts %>
+</p>
+
+
+<%= link_to 'Edit', edit_story_entry_path([@story, @entry]) %> |
+<%= link_to 'Back', story_entries_path(@story) %>
